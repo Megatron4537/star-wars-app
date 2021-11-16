@@ -11,7 +11,7 @@ const App = () => {
   const theme = isDarkMode ? DarkTheme : LightTheme;
 
   return (
-    <SafeAreaView style={{...styles.container, backgroundColor: theme.colors.background}}>
+    <SafeAreaView style={{...styles.container, backgroundColor: theme.colors.card}}>
       <StatusBar backgroundColor={'transparent'} translucent barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <NavigationContainer theme={theme}>
         <ApolloProvider>
